@@ -44,3 +44,11 @@ Lien généré par prestation : `/satisfaction/<token>` (public, sans compte).
 - [ ] Auditer les politiques RLS
 - [ ] La conversion nom d'utilisateur → email (`@hcs.local`) est un raccourci de
       démo ; en production, utiliser un RPC serveur sécurisé (voir README § Sécurité).
+
+## v2.0 — Refonte
+1. Exécuter `supabase/migration_v2.sql` dans SQL Editor (après les scripts v1).
+2. `npm install` (nouvelle dépendance : `recharts`).
+3. Nouveaux modules : Prestations, Retours clients, Distinctions (badges récompenses),
+   Sondages (CRUD/publier/dupliquer), Analyse de satisfaction, Paramètres,
+   profil employé à onglets, navigation groupée + menu mobile, dashboard avec
+   graphiques et activité récente.

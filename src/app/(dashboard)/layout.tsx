@@ -13,7 +13,7 @@ export default async function DashboardLayout({ children }: { children: React.Re
         nom={session.profil?.nom_complet ?? ""}
         role={session.profil?.roles?.code ?? ""}
       />
-      <main className="flex-1 p-4 md:p-8 overflow-x-auto">{children}</main>
+      <main className="flex-1 p-4 pt-16 md:p-8 overflow-x-auto">{children}</main>
     </div>
   );
 }
